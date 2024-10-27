@@ -2,7 +2,6 @@ import { Grid2, Container } from "@mui/material";
 import "./App.css";
 import { InputPaper } from "./Input";
 import { TablePaper } from "./TablePaper";
-import { Photos } from "./Photos";
 import { PhotoCard } from "./PhotoCard";
 import Picture1 from "./assets/picture1.jpg";
 import Picture2 from "./assets/picture2.jpg";
@@ -27,15 +26,10 @@ function App() {
   return (
     <Container maxWidth="lg">
       <Grid2 container spacing={2} padding="10px" bgcolor="gainsboro">
-        <Grid2 container size={{ xs: 12, md: 8, lg: 8 }}>
-          <Grid2 size={12}>
-            <TablePaper equipments={equipments} />
-          </Grid2>
-          <Grid2 size={12}>
-            <InputPaper />
-          </Grid2>
+        <Grid2 size={{ xs: 12, md: 8, lg: 8 }}>
+          <TablePaper equipments={equipments} />
+          <InputPaper />
         </Grid2>
-
         <Grid2 container spacing={2} size={{ xs: 12, md: 4, lg: 4 }}>
           {photos.map((item) => {
             return (

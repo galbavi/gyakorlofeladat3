@@ -9,7 +9,7 @@ import {
 
 export const TablePaper = ({ equipments }) => {
   return (
-    <Paper elevation={5}>
+    <Paper elevation={5} sx={{ marginBottom: 2 }}>
       <Table>
         <TableHead>
           <TableRow>
